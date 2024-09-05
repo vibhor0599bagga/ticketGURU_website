@@ -34,8 +34,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed w-full pt-4 px-6 pb-4 text-sm z-50 h-[10vh]">
-      <nav className="mx-auto max-w-5xl flex justify-between items-center p-4 bg-white/5 backdrop-blur-lg shadow-lg rounded-xl">
+    <header className="fixed w-full py-4 px-6 text-sm z-50 h-[10vh] ">
+      <nav className="mx-auto max-w-5xl flex justify-between items-center p-4 bg-black/30 backdrop-blur-sm shadow-lg rounded-xl">
         <div className="flex items-center space-x-6">
           <a
             href="#main"

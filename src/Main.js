@@ -1,23 +1,23 @@
 import React from 'react';
 import womanImage from './Images/woman.jpg'; // Import the image
+import MainFeatures from './MainFeatures';
 
 const Main = () => {
   return (
-    <main id="main" className="w-full h-screen ">
-
+    <main id="main" className="relative w-full min-h-screen flex flex-col items-center justify-center">
       {/* Full-width image that appears below the navbar */}
-      <div className="w-full h-[80vh] pt-24">
+      <div className="w-full h-full absolute inset-0">
         <img
           src={womanImage}
           alt="Woman in museum"
-          className="w-full h-full object-cover blur-sm opacity-75"
+          className="w-full h-full object-cover opacity-75"
         />
       </div>
 
-      {/* Rest of the content, which has a black background once scrolled */}
-      <section className="w-full bg-black py-16">
-        <div className="max-w-4xl text-center px-4 mx-auto">
-          <div className="border-2 p-10 bg-white/10 rounded-lg">
+      {/* Content section positioned over the image */}
+      <section className="relative z-10 flex items-center justify-center h-full mt-24">
+        <div className="max-w-4xl text-center px-8 py-10 bg-black/30 rounded-lg backdrop-blur-sm">
+          <div className="">
             <h1 className="text-4xl font-bold text-white">Introducing</h1>
             <h2 className="text-6xl font-extrabold text-green-500 py-8">
               ticketGURU
@@ -36,6 +36,11 @@ const Main = () => {
           </div>
         </div>
       </section>
+
+      {/* MainFeatures component */}
+      <div className="relative z-10 w-full flex justify-center items-center mt-12">
+        <MainFeatures />
+      </div>
     </main>
   );
 };

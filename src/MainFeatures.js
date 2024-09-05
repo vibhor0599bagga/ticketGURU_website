@@ -3,8 +3,8 @@ import React from 'react';
 
 function Features() {
   return (
-    <section className="mx-auto max-w-4xl text-white ">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white/5 backdrop-blur-lg border-2 border-gray-500 p-4 rounded-lg shadow-lg">
+    <section className="mx-auto max-w-4xl text-white">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-black/30 backdrop-blur-sm p-4 rounded-lg shadow-lg">
         <div className="flex justify-center items-center p-2">
           <span className="text-lg font-medium">22+ Languages</span>
         </div>

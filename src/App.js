@@ -1,7 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import Navbar from './Navbar';
 import Main from './Main';
-import Features from './MainFeatures';
 import Demo from './Demo';
 import About from './About';
 import Highlights from './Highlights';
@@ -19,9 +18,10 @@ const App = () => {
     <div className='bg-black'>
       <Navbar/>
       <div className='mb-36'>
-        <div ref={myRef}><Main/></div> 
-        <Features/>
-      </div>  
+      <div>
+        <div ref={myRef}><Main/></div>
+        </div>
+      </div>
       <Demo />
       <About /> 
       <Highlights />   
