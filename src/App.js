@@ -11,16 +11,16 @@ const App = () => {
   const myRef = useRef(null);
 
   useLayoutEffect(() => {
-    myRef.current.scrollIntoView({ behavior: 'smooth' });
-  }, [myRef]);
+    if (myRef.current) {
+      myRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []); // Empty dependency array so it only runs once when the component mounts
 
   return (
     <div className='bg-black'>
       <Navbar/>
       <div className='mb-36'>
-      <div>
         <div ref={myRef}><Main/></div>
-        </div>
       </div>
       <Demo />
       <About /> 
@@ -28,7 +28,7 @@ const App = () => {
       <FAQs /> 
       <Footer /> 
     </div>
-  )
+  );
 }
 
 export default App;

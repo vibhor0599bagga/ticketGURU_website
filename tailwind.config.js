@@ -4,7 +4,12 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        customGreen:'#034f3c', 
+        customGreen1:'#05936f', 
+      }
+    },
   },
   plugins: [],
 }
