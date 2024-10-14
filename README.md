@@ -1,5 +1,5 @@
 # TicketGURU
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://youtu.be/54R8JdxQxes>
 #### Description:
 TicketGURU is an online platform designed to simplify the process of booking tickets for museums and heritage sites. The website offers a clean and intuitive interface where users can browse different museums, view available tickets, and make bookings with ease. Built using modern web technologies, TicketGURU ensures a seamless user experience for both first-time visitors and regular users.
 
